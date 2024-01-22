@@ -1,12 +1,19 @@
 public class job
 {
-    public string _company;
+    private string company;
 
-    public string _jobTitle;
+    private string jobTitle;
 
-    public int _startYear;
+    private int startYear;
 
-    public int _endYear;
+    private int endYear;
+
+    public job (string companyname, string title, int start, int end){
+        company = companyname;
+        jobTitle = title;
+        startYear = start;
+        endYear = end;
+    }
 
     public void Display(){
         // Software Engineer (Microsoft) 2019-2022
