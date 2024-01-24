@@ -1,16 +1,30 @@
 public class resume
 {
-    public string _name;
+    private string name;
 
 
     // public List<job> jobs = new();   <---this works too
-    public List<job> _jobs = new List<job>();
+    public List<job> jobs = new List<job>();
 
-    public void Display;
+    public resume(string yourname)
     {
-        foreach (job j in _jobs)
+        name = yourname;
+    }
+    public void Addjob (job j)
+    {
+        jobs.Add(j);
+    }
+
+    public void Display()
+    {
+        
+        Console.WriteLine($"Name: {name}");
+        Console.WriteLine("Jobs:");
+        foreach (job j in jobs)
             {
-                j.Display();
+                j.Display();           
             }
+
+
     }
 }
