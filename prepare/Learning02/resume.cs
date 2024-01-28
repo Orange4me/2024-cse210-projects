@@ -1,16 +1,16 @@
-public class resume
+public class Resume
 {
     private string name;
 
 
     // public List<job> jobs = new();   <---this works too
-    public List<job> jobs = new List<job>();
+    public List<Job> jobs = new List<Job>();
 
-    public resume(string yourname)
+    public Resume(string yourname)
     {
         name = yourname;
     }
-    public void Addjob (job j)
+    public void AddJob (Job j)
     {
         jobs.Add(j);
     }
@@ -20,7 +20,7 @@ public class resume
         
         Console.WriteLine($"Name: {name}");
         Console.WriteLine("Jobs:");
-        foreach (job j in jobs)
+        foreach (Job j in jobs)
             {
                 j.Display();           
             }

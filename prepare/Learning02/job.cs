@@ -1,4 +1,4 @@
-public class job
+public class Job
 {
     private string company;
 
@@ -8,7 +8,7 @@ public class job
 
     private int endYear;
 
-    public job (string companyname, string title, int start, int end)
+    public Job (string companyname, string title, int start, int end)
     {
         company = companyname;
         jobTitle = title;

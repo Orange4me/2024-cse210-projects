@@ -4,13 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        job job1 = new job("Del Taco", "Manager", "1706""-""2020");
-        job job2 = new job("Del Taco", "Cook", "1708""-""2021");
+        Job job1 = new Job("Del Taco", "Manager", 1706, 2020);
+        Job job2 = new Job("Del Taco", "Cook", 2020, 2021);
     
-        resume r = new resume("Brandon Alder");
+        Resume r = new Resume("Brandon Alder");
 
-        r.Addjob(job1);
-        r.Addjob(job2);
+        r.AddJob(job1);
+        r.AddJob(job2);
         
         r.Display();
     }
