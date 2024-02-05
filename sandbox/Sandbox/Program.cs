@@ -4,6 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Sandbox World!");
+        BaldEagle warthog = new BaldEagle("warthog");
+        BaldEagle dragon = new BaldEagle("dragon");
+        warthog.MakeSound(); 
+        dragon.MakeSound();
     }
 }

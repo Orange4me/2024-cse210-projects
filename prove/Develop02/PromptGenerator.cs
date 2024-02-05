@@ -10,6 +10,8 @@ public class static PromptGenerator
 
     Randomizer choice = new Randomizer();
     int index = choice.Next(randomPro.Count);
-    string randomPrompt = randomPro[index];
+    string rando = randomPro[index];
+
     
+
 }

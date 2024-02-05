@@ -26,6 +26,6 @@ class Entry;
     // {
     //     return $"{file} -- {date} -- {prompt} -- {entri}"
     // }
-    
+
 
 }
