@@ -8,6 +8,7 @@ public class Journal
         List<string> menuOptions = ["1. Write", "2. Display", "3. Load", "4. Save", "5. Quit"];
         // Dictionary<string, string> journalDict = new Dictionary<string, string>();
         
+        List<List<string>> index = new List<List<string>>();
 
         while (true)
         {

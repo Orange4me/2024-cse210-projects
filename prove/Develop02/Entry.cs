@@ -2,7 +2,6 @@ using System;
 
 class Entry;
 {
-    private string file;
 
     private string date;
 
@@ -20,12 +19,14 @@ class Entry;
 
     public void Display()
     {
-        Console.WriteLine($"{date} - {prompt} \n{entri}") 
+        Console.WriteLine($"{date} - {prompt} \n{entri}"); 
     }
-    // public string storeEntri()
-    // {
-    //     return $"{file} -- {date} -- {prompt} -- {entri}"
-    // }
+
+    
+    public string storeEntri()
+    {
+        return $"{date} /-\ {prompt} /-\ {entri}"
+    }
 
 
 }
