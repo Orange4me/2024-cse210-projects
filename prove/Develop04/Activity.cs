@@ -6,6 +6,13 @@ public class Activity
     protected string _namedAct;
     protected string _description;
     protected int _duration;
+    protected char[] _animation =
+    {
+        '-',
+        '\\',
+        '|',
+        '/'
+    };
 
 
     // public string ActStructure()
@@ -21,20 +28,25 @@ public class Activity
 
     public int durationActivity()
     {
-        _duration = 
-        
-
-
+        // _duration = 
+        return 5;
     }
     
-    public int animation()
+    public void animation()
     {
-        Console.Clear();
-        int frame = 0;  
-        while(frame<_duration)
+        for (int a = 0; a < 5; a++)
         {
-            
+           Console.Write(_animation[a % _animation.Length]); //study up on modulo
+           Thread.Sleep(1000);
+           Console.Write1("\b");
         }
+
+
+        // int timeFrame = 0;  
+        // while(frame<_duration)
+        // {
+            
+        // }
 
     }
 

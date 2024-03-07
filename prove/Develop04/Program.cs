@@ -22,7 +22,8 @@ class Program
                 Console.WriteLine("BreathingActivity");
                 Breath BreathingActivity = new Breath();
                 BreathingActivity.startMessage();
-                BreathingActivity.durationActivity();
+                BreathingActivity.animation();
+                // BreathingActivity.durationActivity();
                 BreathingActivity.endMessage();
                 Console.ReadLine();
             }
