@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 public class Resume
 {
     private string name;
@@ -24,7 +26,7 @@ public class Resume
             {
                 j.Display();           
             }
-
-
+    
     }
+    
 }
